@@ -7,7 +7,7 @@ public class CommandFactory {
     private static CommandFactory instance;
 
     private CommandFactory() {
-        this.MapNameToCommand = new HashMap<String, Command>();
+        this.MapNameToCommand = new HashMap<>();
     }
 
     public static CommandFactory getInstance() {
@@ -27,7 +27,7 @@ public class CommandFactory {
         Command command = null;
         Class clazz = null;
         try {
-            clazz = Class.forName(name);
+            clazz = Class.forName("edu.upc.dsa."+name);
             command = (Command) clazz.newInstance();
         } catch (IllegalAccessException | InstantiationException | ClassNotFoundException e) {
             e.printStackTrace();
