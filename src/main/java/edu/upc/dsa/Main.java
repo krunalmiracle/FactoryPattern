@@ -6,7 +6,7 @@ public class Main {
     //Implementing Log4j
     static final Logger logger = Logger.getLogger(Main.class);
     public static void main(String[] args) {
-        //COnfiguring Log4j
+        //Configuring Log4j
         //Configure logger
         BasicConfigurator.configure();
         logger.debug("Debug Test Message!");

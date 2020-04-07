@@ -7,7 +7,7 @@ public class CommandFactory {
     private static CommandFactory instance;
 
     private CommandFactory() {
-        this.MapNameToCommand = new HashMap<>();
+        this.MapNameToCommand = new HashMap<String, Command>();
     }
 
     public static CommandFactory getInstance() {
