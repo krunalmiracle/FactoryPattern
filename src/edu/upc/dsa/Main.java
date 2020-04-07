@@ -3,6 +3,7 @@ package edu.upc.dsa;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Command command = CommandFactory.getInstance().getCommand("C1");
+        command.execute();
     }
 }
